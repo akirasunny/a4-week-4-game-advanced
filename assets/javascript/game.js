@@ -48,10 +48,10 @@ $(".homunculus").on("click", function() {
 // damage calculation
 	$("#attack").on("click", function() {
 		$("#damage").empty();
-		factordamage = (Math.floor(Math.random() * 10) + 90 + 1) / 100;
+		factordamage = (Math.floor(Math.random() * 20) + 80 + 1) / 100;
 		var damagedef = attackuser[indexself] * factors[indexself][indexdefender] * factordamage;
 		hpdefender -= damagedef;
-		factordamage = (Math.floor(Math.random() * 10) + 90 + 1) / 100;
+		factordamage = (Math.floor(Math.random() * 20) + 80 + 1) / 100;
 		var damageself = attackenemy[indexdefender] * factordamage;
 		hpself -= damageself;
 
